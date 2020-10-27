@@ -19,16 +19,4 @@ export default class Base {
 
         return C;
     }
-
-    get name() {
-        return 'Base';
-    }
-
-    get prototypeChain() {
-        const chain = (super.prototypeChain || ['Base']);
-
-        chain.push(this.name);
-
-        return chain;
-    }
 }
